@@ -37,6 +37,7 @@ chmod +x start-ngrok-client.sh
 echo "2. 客户端启动脚本已创建: $CLIENT_DIR/start-ngrok-client.sh"
 echo ""
 echo "📝 使用说明:"
-echo "1. 将 /usr/local/ngrok/bin/linux_amd64/ngrok 复制到此目录"
+echo "1. 将 /usr/local/ngrok/bin/linux_amd64/ngrok 复制到此目录" 
+echo "cd /Users/wugj/ngrok-client && scp root@qiaopan.tech:/usr/local/ngrok/bin/darwin_amd64/ngrok ."
 echo "2. 运行: ./start-ngrok-client.sh"
 echo "3. 查看日志: tail -f ngrok-client.log"

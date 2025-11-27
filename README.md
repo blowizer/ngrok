@@ -51,15 +51,20 @@ echo "步骤1: 生成证书..."
 sudo chmod +x /usr/local/bin/setup-ngrok-cert.sh
 sudo /usr/local/bin/setup-ngrok-cert.sh
 
-echo "步骤2: 编译Ngrok..."
+echo "步骤2: 同步证书Ngrok..."
+sudo chmod +x /usr/local/bin/sync-ngrok-certs.sh  
+sudo /usr/local/bin/sync-ngrok-certs.sh 
+
+echo "步骤3: 编译Ngrok..."
 sudo chmod +x /usr/local/bin/build-ngrok.sh  
 sudo /usr/local/bin/build-ngrok.sh
 
-echo "步骤3: 配置系统服务..."
+echo "步骤4: 配置系统服务..."
 sudo chmod +x /usr/local/bin/setup-ngrok-service.sh
 sudo /usr/local/bin/setup-ngrok-service.sh
 
-echo "步骤4: 配置客户端..."
+echo "步骤5: 配置客户端..."
+
 sudo chmod +x /usr/local/bin/setup-ngrok-client.sh
 /usr/local/bin/setup-ngrok-client.sh
 
